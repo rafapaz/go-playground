@@ -6,7 +6,7 @@ func RemoveDup(s []string) []string {
 
 	lens = len(s)
 
-	for i := 0; i < lens; i++ {
+	for i = 0; i < lens; i++ {
 		if i == 0 {
 			continue
 		}
@@ -16,10 +16,10 @@ func RemoveDup(s []string) []string {
 		}
 
 		if s[i] == s[i-1] {
-			s = append(s[:i-1], s[i:]...)
+			s = append(s[:i], s[i+1:]...)
 			i--
 		}
 	}
 
-	return s[:i]
+	return s
 }

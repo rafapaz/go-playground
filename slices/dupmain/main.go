@@ -7,7 +7,7 @@ import (
 
 func main() {
 	s := []string{"aaa", "bbb", "bbb", "ccc", "ddd", "eee", "eee", "eee", "fff", "ggg", "hhh", "iii", "iii"}
-	fmt.Println(s)
-	duplicate.RemoveDup(s)
-	fmt.Println(s)
+	fmt.Printf("%s\n", s)
+	s = duplicate.RemoveDup(s)
+	fmt.Printf("%d - %s\n", len(s), s)
 }
